@@ -1,0 +1,32 @@
+<div class="form-group">
+<h2>History</h2>
+
+
+<ul class="unstyled">
+<li></li>
+<li>From Amount</li>
+<li>From Currency</li>
+<li>=</li>
+<li>To Amount</li>
+<li>To Currency</li>
+</ul>
+<ul class="unstyled">
+	<li ng-repeat="word in historyWords">
+<ul class="unstyled">
+<li><input type="checkbox"></li>
+<li>{{word.fromAmount}}</li>
+<li>{{word.fromCurrency}}</li>
+<li>=</li>
+<li>{{word.toAmount}}</li>
+<li>{{word.toCurrency}}</li>
+</ul>
+</li></ul>
+
+
+
+</div>
+<div class="form-group">
+		<button type="submit" ng-click="archive()" class="btn btn-default delBtn">
+			<span class="glyphicon glyphicon-trash"></span>Delete
+		</button>
+</div>

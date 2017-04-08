@@ -1,0 +1,87 @@
+<br />
+<div class="form-inline">
+    <div class="margin-bottom">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="col-md-2" for="fromAmount">Amount: </label>
+                <input id="fromAmount" class="form-control col-md-8 required" type="text" placeholder="Enter Amount" ng-model="fromAmount" ng-change="hideConvert()"/>              
+			</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="col-md-2" for="fromCurrency">From Currency: </label>
+                <input list="currencyList" id="fromCurrency" class="form-control col-md-6 required" type="text" placeholder="Enter Currency Code" ng-model="fromCurrency" ng-change="hideConvert()"/>
+<datalist id="currencyList">
+    <option value="SEK ">
+    <option value="ATS ">
+    <option value="AUD "> 
+    <option value="BEF ">
+    <option value="BRL ">
+	<option value="CAD ">
+    <option value="CHF ">
+    <option value="CNY ">
+    <option value="CYP ">
+    <option value="CZK ">
+	<option value="DEM ">
+    <option value="DKK ">
+    <option value="EEK ">
+    <option value="ESP ">
+    <option value="EUR ">
+	<option value="FIM ">
+    <option value="FRF ">
+    <option value="GBP ">
+    <option value="GRD ">
+    <option value="HKD ">
+	<option value="HUF ">
+    <option value="IDR ">
+    <option value="IEP ">
+    <option value="INR ">
+    <option value="ISK ">
+	<option value="ITL ">
+    <option value="JPY ">
+	<option value="KRW ">
+    <option value="KWD ">
+    <option value="LTL ">
+    <option value="LVL ">
+    <option value="MAD ">
+	<option value="MXN ">
+    <option value="MYR ">
+    <option value="NLG ">
+    <option value="NOK ">
+    <option value="NZD ">
+	<option value="PLN ">
+    <option value="PTE ">
+    <option value="RUB ">
+    <option value="SAR ">
+    <option value="SGD ">
+	<option value="SIT ">
+    <option value="SKK ">
+    <option value="THB ">
+    <option value="TRL ">
+	<option value="TRY ">
+    <option value="USD ">
+    <option value="ZAR ">   
+  </datalist>				
+</div></div><br>		 
+     
+      <div class="row"><div class="col-md-12"> <label class="col-md-2" for="toCurrency">To Currency: </label><input
+         id="toCurrency"  list="currencyList" class="form-control col-md-8 required" type="text" placeholder="Enter Currency Code"
+         ng-model="toCurrency" ng-change="hideConvert()"/></div></div><br>	  
+      <button type="submit" ng-click="find()" class="btn btn-default convertButton">
+      <span class="glyphicon glyphicon-ok "></span>Convert
+      </button>
+	  <div class="margin-bottom">
+	<label>Note : </label> Please wait for few seconds for the service to respond.
+	</div>
+   </div>
+  <div class="margin-bottom" id="convertedAmount">  
+  {{fromAmount}} {{fromCurrency}} = {{toAmount}} {{toCurrency}}
+    <div class="margin-bottom">
+		<button type="submit" ng-click="addTo()" class="btn btn-default">
+			<span class="glyphicon glyphicon-plus"></span> Add To History
+		</button>
+	</div>
+  </div>
+
+</div>

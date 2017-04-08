@@ -1,0 +1,112 @@
+body {
+padding-top: 60px;
+background-color: #f8f8f8;
+font-family: cursive;
+font-size: 15px; }
+
+/* Wrappers */
+/* ------------------------------- */
+button{
+	position:relative;
+	left :175px;
+}
+.glyphicon-ok{
+	float:right;
+	padding: 1px;
+    left: 2px;
+}
+#graphImg{	
+    height: 300px;
+    width: 400px;    
+    position: relative;
+    left: 100px;
+    top: 15px;
+}
+#convertedAmount{
+position: relative;
+    left: 15px;
+}
+.convertButton{
+	position: relative;
+    left: 156px;
+}
+.display_none{
+display :none;
+}
+.display_visible{
+display : block;
+}
+.delBtn{
+	position: relative;
+    left: 400px;
+}
+ul li{
+list-style-type: none;
+display: inline-block;
+padding : 0 20px;
+min-width: 100px;
+}
+td{
+	width: 100px;
+}
+th{
+	width: 200px;
+}
+#wrapper {
+  width: 100%; }
+
+#page-wrapper {
+  padding: 0 15px;
+  min-height: 568px;
+  background-color: #fff; }
+
+#page-wrapper {
+    position: inherit;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    min-height: 1300px;
+    border-left: 1px solid #e7e7e7; }
+.required  {
+  content:"*";
+}
+
+/* Navigation */
+/* ------------------------------- */
+/* Sidebar Menu Styles */
+.navbar-static-side ul li {
+  border-bottom: 1px solid #e7e7e7; }
+
+.sidebar-search {
+  padding: 15px; }
+
+  .margin-bottom{margin-bottom:10px;}
+
+.nav-second-level li,
+.nav-third-level li {
+  border-bottom: none !important; }
+
+.nav-second-level li a {
+  padding-left: 37px; }
+
+.nav-third-level li a {
+  padding-left: 52px; }
+
+@media (min-width: 768px) {
+  .navbar-static-side {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 51px; }
+
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto; } }
+@media (max-height: 600px) and (max-width: 767px) {
+  .sidebar-collapse {
+    max-height: 300px;
+    overflow-y: scroll; } }
+@media (max-height: 400px) and (max-width: 767px) {
+  .sidebar-collapse {
+    max-height: 200px;
+    overflow-y: scroll; } }
